@@ -1,0 +1,14 @@
+name: Release brick
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    uses: MASS4ORG/action-brick-release/.github/workflows/release.yml@v1
+    with:
+      source-tests: Brick~/Tests/Turian.Hzb.Tests/Turian.Hzb.Tests.csproj

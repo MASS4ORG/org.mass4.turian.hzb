@@ -1,0 +1,8 @@
+Brick~/Precast/
+.bricks/
+bin/
+obj/
+
+Brick~/Bake/
+
+!Runtime/Shaders~/*.spv

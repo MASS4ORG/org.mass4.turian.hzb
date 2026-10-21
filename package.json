@@ -1,0 +1,29 @@
+{
+  "id": "org.mass4.turian.hzb",
+  "version": "1.0.2",
+  "displayName": "GPU Occlusion Culling",
+  "description": "Optional current-frame hierarchical depth visibility for the 3D renderer.",
+  "author": "MASS4",
+  "license": "MPL-2.0",
+  "exclude": [
+    "Brick~/Tests",
+    ".github",
+    ".gitignore",
+    ".script-*.py",
+    ".script-*.cs",
+    ".script-*.sh"
+  ],
+  "dependencies": {
+    "org.mass4.turian.vulkan": "builtin:org.mass4.turian.vulkan"
+  },
+  "categories": [
+    "turian:graphics"
+  ],
+  "roles": {
+    "source": "Brick~/Source",
+    "tests": "Brick~/Tests",
+    "precast": "Brick~/Precast",
+    "bake": "Brick~/Bake"
+  },
+  "bake": "auto"
+}

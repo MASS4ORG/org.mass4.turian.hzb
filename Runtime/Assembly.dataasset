@@ -1,0 +1,15 @@
+{
+  "__TypeId": "ca028d68-85a9-5f3d-ad2f-c54db757d6fa",
+  "Name": "Turian.Engine.Hzb",
+  "RootNamespace": "Turian.Engine.Hzb",
+  "Id": "f0dcacb5-4ddc-4362-cd4e-50ba617ad454",
+  "EditorOnly": false,
+  "AllowUnsafeCode": true,
+  "EmbeddedResources": [
+    "Shaders~/base-single.comp.spv",
+    "Shaders~/base.comp.spv",
+    "Shaders~/cull.comp.spv",
+    "Shaders~/depth.vert.spv",
+    "Shaders~/reduce.comp.spv"
+  ]
+}

@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+        <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
+        <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <DisableMSBuildAssemblyCopyCheck>true</DisableMSBuildAssemblyCopyCheck>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../Source/Turian.Engine.Hzb/Turian.Engine.Hzb.csproj"/>
+        <ProjectReference Include="$(TurianDir)Turian/Editor/Core/Turian.Editor.Core.csproj"/>
+    </ItemGroup>
+
+    <!-- Shared fixtures of the engine's test suite. -->
+    <ItemGroup>
+        <Compile Include="$(TurianDir)Turian.Tests/SerialTests.cs" Link="Shared/SerialTests.cs"/>
+        <Compile Include="$(TurianDir)Turian.Tests/Engine/Core/Graphics/VulkanFixture.cs" Link="Shared/VulkanFixture.cs"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.12.0"/>
+        <PackageReference Include="NSubstitute" Version="6.2.0"/>
+        <PackageReference Include="xunit.v3" Version="4.0.2"/>
+    </ItemGroup>
+
+</Project>
