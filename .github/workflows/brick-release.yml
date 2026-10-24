@@ -10,5 +10,8 @@ permissions:
 jobs:
   release:
     uses: MASS4ORG/action-brick-release/.github/workflows/release.yml@v1
+    secrets:
+      MASS4_BRICKS_CI_SIGNING_KEY: ${{ secrets.MASS4_BRICKS_CI_SIGNING_KEY }}
+      MASS4_BRICKS_STORE_TOKEN: ${{ secrets.MASS4_BRICKS_STORE_TOKEN }}
     with:
       source-tests: Brick~/Tests/Turian.Hzb.Tests/Turian.Hzb.Tests.csproj
