@@ -1,6 +1,6 @@
 {
   "id": "org.mass4.turian.hzb",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "displayName": "GPU Occlusion Culling",
   "description": "Optional current-frame hierarchical depth visibility for the 3D renderer.",
   "author": "MASS4",

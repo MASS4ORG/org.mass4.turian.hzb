@@ -4,6 +4,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.0.4] - 2026-11-14
+
+- Fixed: tests build against Turian 5
+
+## [1.0.3]
+
 - Changed: brick workflows and publisher secret setup.
 - Fixed: forward release environment secrets to the reusable workflow.
 
